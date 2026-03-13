@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Fotográfico - 46Graus Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Meu Portfólio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#loja">Loja</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Seu Portfólio Online</h1>
+            <p>Mostre seu trabalho ao mundo com estilo profissional.</p>
+            <a href="#portfolio" class="btn">Ver Portfólio</a>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Meu Trabalho</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400x300?text=Foto+1" alt="Foto 1">
+                <div class="overlay">
+                    <h3>Retrato</h3>
+                    <p>Descrição da foto</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400x300?text=Foto+2" alt="Foto 2">
+                <div class="overlay">
+                    <h3>Paisagem</h3>
+                    <p>Descrição da foto</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400x300?text=Foto+3" alt="Foto 3">
+                <div class="overlay">
+                    <h3>Evento</h3>
+                    <p>Descrição da foto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria">
+        <h2>Galeria de Downloads</h2>
+        <p>Selecione as fotos que deseja baixar. Proteção contra capturas de tela ativada.</p>
+        <div class="gallery">
+            <div class="photo-item">
+                <img src="https://via.placeholder.com/300x200?text=Foto+1" alt="Foto 1" class="protected-image">
+                <label>
+                    <input type="checkbox" class="select-photo" data-src="https://via.placeholder.com/300x200?text=Foto+1" data-name="foto1.jpg">
+                    Selecionar
+                </label>
+            </div>
+            <div class="photo-item">
+                <img src="https://via.placeholder.com/300x200?text=Foto+2" alt="Foto 2" class="protected-image">
+                <label>
+                    <input type="checkbox" class="select-photo" data-src="https://via.placeholder.com/300x200?text=Foto+2" data-name="foto2.jpg">
+                    Selecionar
+                </label>
+            </div>
+            <div class="photo-item">
+                <img src="https://via.placeholder.com/300x200?text=Foto+3" alt="Foto 3" class="protected-image">
+                <label>
+                    <input type="checkbox" class="select-photo" data-src="https://via.placeholder.com/300x200?text=Foto+3" data-name="foto3.jpg">
+                    Selecionar
+                </label>
+            </div>
+        </div>
+        <div class="actions">
+            <button id="download-selected">Baixar Selecionadas</button>
+            <button id="select-all">Selecionar Todas</button>
+            <button id="deselect-all">Desmarcar Todas</button>
+        </div>
+    </section>
+
+    <section id="loja" class="loja">
+        <h2>Loja Online</h2>
+        <div class="produtos">
+            <div class="produto">
+                <img src="https://via.placeholder.com/200x150?text=Produto+1" alt="Produto 1">
+                <h3>Pacote Básico</h3>
+                <p>R$ 50,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="https://via.placeholder.com/200x150?text=Produto+2" alt="Produto 2">
+                <h3>Pacote Premium</h3>
+                <p>R$ 100,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
